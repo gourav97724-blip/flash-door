@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flash Door | Shop Smart</title>
+    <meta
+      name="description"
+      content="Flash Door — premium online shopping store with trending deals, electronics, fashion, home essentials, and more."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-strip">
+      <p>Free delivery above ₹999 • New user save 15% • Flash Deals ends tonight</p>
+    </div>
+
+    <header class="header">
+      <div class="container nav-wrap">
+        <div class="brand-lockup">
+          <div class="logo-wrap">
+            <span class="logo-mark">F</span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Flash Door</span>
+            <small>Smart shopping</small>
+          </div>
+        </div>
+
+        <div class="location-box">
+          <span class="mini-label">Deliver to</span>
+          <strong>Delhi, 110001</strong>
+        </div>
+
+        <label class="search-box" aria-label="Search products">
+          <span class="search-icon">⌕</span>
+          <input id="searchInput" type="text" placeholder="Search Amazon style essentials" />
+          <button class="search-btn">Search</button>
+        </label>
+
+        <nav class="account-badges" aria-label="User actions">
+          <div class="badge-box">
+            <span class="mini-label">Hello, sign in</span>
+            <strong>Account</strong>
+          </div>
+          <div class="badge-box">
+            <span class="mini-label">Returns</span>
+            <strong>& Orders</strong>
+          </div>
+          <button class="cart-button" id="cartToggle" aria-label="Open cart">
+            <span class="cart-icon">🛒</span>
+            <span>Cart</span>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </nav>
+      </div>
+
+      <div class="subnav-wrap">
+        <div class="container subnav">
+          <button class="menu-btn">☰ All</button>
+          <a href="#">Best Sellers</a>
+          <a href="#">Today's Deals</a>
+          <a href="#">Mobiles</a>
+          <a href="#">Electronics</a>
+          <a href="#">Fashion</a>
+          <a href="#">Home</a>
+          <a href="#">Prime</a>
+          <a href="#">New Releases</a>
+          <a href="#">Books</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-banner">
+            <div class="hero-content">
+              <span class="eyebrow">Weekend mega sale</span>
+              <h1>Upgrade your everyday life.</h1>
+              <p>
+                Discover gadgets, furniture, home essentials and styles that make life easier and more
+                premium.
+              </p>
+              <div class="hero-actions">
+                <button class="primary-btn">Shop now</button>
+                <button class="secondary-btn">Explore deals</button>
+              </div>
+              <div class="promo-stats">
+                <div>
+                  <strong>50K+</strong>
+                  <span>happy shoppers</span>
+                </div>
+                <div>
+                  <strong>4.8/5</strong>
+                  <span>average rating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-side">
+            <div class="mini-card card-light">
+              <div>
+                <p>Deal of the day</p>
+                <h3>Up to 70% off</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Smart wearables" />
+            </div>
+            <div class="mini-card card-dark">
+              <div>
+                <p>New arrivals</p>
+                <h3>Smart home</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Smart home device" />
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="categories-section container">
+        <div class="section-head">
+          <h2>Shop by category</h2>
+          <a href="#">See all</a>
+        </div>
+        <div class="category-grid">
+          <article class="category-item">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Electronics" />
+            <h3>Electronics</h3>
+          </article>
+          <article class="category-item">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Fashion" />
+            <h3>Fashion</h3>
+          </article>
+          <article class="category-item">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Home" />
+            <h3>Home</h3>
+          </article>
+          <article class="category-item">
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=900&q=80" alt="Beauty" />
+            <h3>Beauty</h3>
+          </article>
+          <article class="category-item">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Kids" />
+            <h3>Kids</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="deal-section container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow dark">Flash deals</span>
+            <h2>Limited-time offers</h2>
+          </div>
+          <div class="countdown" id="countdown">02:14:36</div>
+        </div>
+        <div class="product-grid" id="dealsGrid"></div>
+      </section>
+
+      <section class="showcase container">
+        <div class="showcase-banner">
+          <div>
+            <span class="eyebrow">Trending now</span>
+            <h2>Bring home the best in tech.</h2>
+          </div>
+          <button class="primary-btn">Browse collection</button>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="section-head">
+          <h2>Best sellers</h2>
+          <a href="#">View all</a>
+        </div>
+        <div class="product-grid" id="productsGrid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Flash Door</h3>
+          <p>Shop smarter with curated essentials, elevated design, and trusted quality.</p>
+        </div>
+        <div>
+          <h4>Customer service</h4>
+          <a href="#">Help center</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div>
+          <h4>Follow us</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">X / Twitter</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Flash Door. All rights reserved.</span>
+        <span>India • English • INR</span>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+      <div class="cart-header">
+        <h3>Your cart</h3>
+        <button id="closeCart" aria-label="Close cart">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Your cart is empty. Add a few favorites.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="totals">
+          <span>Subtotal</span>
+          <strong id="subtotal">₹0</strong>
+        </div>
+        <button class="primary-btn checkout-btn">Proceed to checkout</button>
+      </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
